@@ -1,0 +1,47 @@
+<html><head>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript">
+    document.getElementsById("html").style.width="0%";
+    document.getElementsById("css").style.width="0%";
+    document.getElementsById("javascript").style.width="0%";
+    document.getElementsById("mobile development").style.width="0%";
+    document.getElementsById("python").style.width="0%";
+    function getSkills(){
+      console.log("button clicked");
+      console.log("animation started");
+      document.getElementById("skillbutton").style.animation= "btn 1s";
+      document.getElementById("html").style.animation= "html 2s";
+      document.getElementById("html").style.width="100%";
+      document.getElementById("css").style.animation= "css 2s";
+      document.getElementById("css").style.width="90%";
+      document.getElementById("javascript").style.animation= "javascript 2s";
+      document.getElementById("javascript").style.width="65%";
+      document.getElementById("python").style.animation= "python 2s";
+      document.getElementById("python").style.width="10%";
+      document.getElementById("skillbutton").style.animation= "btn 1s";
+    }
+    
+    </script>
+  </head>
+  <body>
+
+    <h1>Progress Bar test</h1>
+
+    <p>My Current Coding Status</p>
+  <br>
+  <div class="box">
+  <p>Html</p>
+  <span class="outbar"><span class="inbar" id="html"></span></span>
+  <p>Css</p>
+  <span class="outbar"><span class="inbar" id="css"></span></span>
+  <p>Javascript</p>
+  <span class="outbar"><span class="inbar" id="javascript"></span></span>
+
+  <p>Python</p>
+  <span class="outbar"><span class="inbar" id="python"></span></span>
+    <input id="skillbutton" class="button" onfocus="focus()" onclick="getSkills()" type="button" value="get status">
+  </div>
+  <p id="cre">By Ayinembabazi Phionah</p>
+  
+    </body></html>
